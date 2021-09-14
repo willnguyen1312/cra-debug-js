@@ -1,8 +1,7 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { sum } from "lodash";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("should work", () => {
+  const result = sum([1, 2, 3]);
+  debugger;
+  expect(result).toBe(6);
 });
